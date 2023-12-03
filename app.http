@@ -1,0 +1,28 @@
+GET http://localhost:8088/players/
+###
+
+POST http://localhost:8088/players/
+Content-Type: application/json
+
+{
+  "playerName": "Vishal",
+  "jerseyNumber": 17,
+  "role": "Bowler"
+}
+###
+ 
+GET http://localhost:8088/players/3/
+###
+
+PUT http://localhost:8088/players/1/
+Content-Type: application/json
+
+{
+  "playerId": 1,
+  "playerName": "Lakshman",
+  "jerseyNumber": 5,
+  "role": "All-rounder"
+}
+###
+
+DELETE http://localhost:8088/players/5/
